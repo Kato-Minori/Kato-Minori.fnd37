@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+  <meta name="theme-color" content="#000000">
+  <title>フラッシュ暗算ゲーム</title>
+  <link rel="stylesheet" href="flash.css">
+  <script type="text/javascript" src="flash.js"></script>
+</head>
+<body>
+  <background ></background>
+  <h1>フラッシュ暗算ゲーム</h1>
+  <p style="text-align: center; font-size: large; font-weight: bolder;" >難易度</p>
+  <div class="level">
+  <input type="radio" name="level" value="easy" checked>イージー
+  <input type="radio" name="level" value="normal">ノーマル
+  <input type="radio" name="level" value="hard">ハード<br>
+  <input type="radio" name="level" value="expert">ナイトメア?!<br>
+  <button style="text-align: center;"
+    id="startBtn">START</button><br><br>
+  </div>
+   <div class="square">
+    <div id ="timer" class="time">3</div>
+   </div><br>
+   <div class="answer-position">
+    <input class ="answer" style="text-align: center; font-size: medium;"/>
+    <input id="answerBtn" type="button" value ="解答" onclick="checkAnswer()"/>
+  </div>
+</body>
+</html>
